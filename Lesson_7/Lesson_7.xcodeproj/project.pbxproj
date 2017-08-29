@@ -29,6 +29,7 @@
 		32C6816F1F55C7850090D58F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32C681751F55CC540090D58F /* ViewController_2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController_2.h; sourceTree = "<group>"; };
 		32C681761F55CC540090D58F /* ViewController_2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController_2.m; sourceTree = "<group>"; };
+		32C681781F55E2290090D58F /* Protocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Protocols.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +73,7 @@
 				32C6816C1F55C7850090D58F /* LaunchScreen.storyboard */,
 				32C6816F1F55C7850090D58F /* Info.plist */,
 				32C6815E1F55C7850090D58F /* Supporting Files */,
+				32C681781F55E2290090D58F /* Protocols.h */,
 			);
 			path = Lesson_7;
 			sourceTree = "<group>";

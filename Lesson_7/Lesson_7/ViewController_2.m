@@ -21,6 +21,18 @@
 - (IBAction)changeColorInViewControllerAction:(UIButton *)sender
 {
     [self.delegate changeBackgroundColor];
+    if ([self.delegate respondsToSelector:@selector(changeBackgroundColorToRed)]) {
+        [self.delegate changeBackgroundColorToRed];
+    }
+    
+}
+
+- (IBAction)changeColorToRedAction:(UIButton *)sender
+{
+    if ([self.delegate respondsToSelector:@selector(changeBackgroundColorToRed)])
+    {
+        [self.delegate changeBackgroundColorToRed];
+    }
 }
 
 - (IBAction)backAction:(UIButton *)sender

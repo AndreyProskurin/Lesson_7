@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina3_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,11 +19,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42k-uD-A6p">
-                                <rect key="frame" x="69" y="225" width="182" height="30"/>
+                                <rect key="frame" x="96.5" y="318.5" width="182" height="30"/>
                                 <state key="normal" title="Показать viewController 2">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -51,11 +51,11 @@
                         <viewControllerLayoutGuide type="bottom" id="yCG-Du-UnA"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nse-qu-sow">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycN-Yb-tFB">
-                                <rect key="frame" x="44.5" y="225" width="231" height="30"/>
+                                <rect key="frame" x="72" y="318.5" width="231" height="30"/>
                                 <state key="normal" title="Поменять цвет на viewController">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -64,7 +64,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4H-va-bk0">
-                                <rect key="frame" x="31" y="400" width="258" height="30"/>
+                                <rect key="frame" x="31" y="587" width="313" height="30"/>
                                 <state key="normal" title="Вернуться назад">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -72,13 +72,26 @@
                                     <action selector="backAction:" destination="YGw-tw-2x9" eventType="touchUpInside" id="Z6M-8y-6TD"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2A-2N-6jZ">
+                                <rect key="frame" x="24" y="401" width="327" height="30"/>
+                                <state key="normal" title="Изменить цвет на красный на первом экране">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeColorToRedAction:" destination="YGw-tw-2x9" eventType="touchUpInside" id="VJH-w6-Ad5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="p4H-va-bk0" firstAttribute="top" secondItem="K2A-2N-6jZ" secondAttribute="bottom" constant="156" id="G27-oh-cRh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="K2A-2N-6jZ" secondAttribute="trailing" constant="8" id="Jhf-4e-ZIV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="p4H-va-bk0" secondAttribute="trailing" constant="15" id="RKc-4V-ul1"/>
                             <constraint firstItem="p4H-va-bk0" firstAttribute="leading" secondItem="nse-qu-sow" secondAttribute="leadingMargin" constant="15" id="UEf-rl-PJt"/>
+                            <constraint firstItem="K2A-2N-6jZ" firstAttribute="leading" secondItem="nse-qu-sow" secondAttribute="leadingMargin" constant="8" id="Wga-16-Y0X"/>
                             <constraint firstItem="yCG-Du-UnA" firstAttribute="top" secondItem="p4H-va-bk0" secondAttribute="bottom" constant="50" id="dz0-sh-NdU"/>
                             <constraint firstItem="ycN-Yb-tFB" firstAttribute="centerX" secondItem="nse-qu-sow" secondAttribute="centerX" id="fqg-RW-ZEI"/>
+                            <constraint firstItem="K2A-2N-6jZ" firstAttribute="top" secondItem="ycN-Yb-tFB" secondAttribute="bottom" constant="52.5" id="rKG-No-YK8"/>
                             <constraint firstItem="ycN-Yb-tFB" firstAttribute="centerY" secondItem="nse-qu-sow" secondAttribute="centerY" id="xhQ-dV-Q4T"/>
                         </constraints>
                     </view>
