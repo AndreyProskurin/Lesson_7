@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "ViewController_2.h"
 
-@interface ViewController ()
+@interface ViewController () <ViewControllersProtocol>
 
 @end
 
@@ -16,13 +17,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    ViewController_2 *secondViewController = segue.destinationViewController;
+    secondViewController.nameViewController = @"VC_2";                  // наглядные примеры, что первый экран владеет вторым.
+                                                                        //Тоесть совершать какие-то действия.
+    secondViewController.view.backgroundColor = [UIColor greenColor];   // --||--||--
+    
+    secondViewController.delegate = self;
+}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - View Controllers Protocol
+
+- (void)changeBackgroundColor
+{
+    self.view.backgroundColor = [UIColor yellowColor];
 }
 
 
